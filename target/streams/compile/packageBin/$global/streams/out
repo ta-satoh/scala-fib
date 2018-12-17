@@ -1,0 +1,25 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /Users/tsatow/works/scala-fib/target/scala-2.12/scala-fib_2.12-0.1.0-SNAPSHOT.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibRec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibRec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/Memo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/Memo.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibIter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibIter.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibRec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibRec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibIter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibIter$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibTailRec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibTailRec$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	tsatow/FibTailRec.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tsatow/works/scala-fib/target/scala-2.12/classes/tsatow/FibTailRec.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

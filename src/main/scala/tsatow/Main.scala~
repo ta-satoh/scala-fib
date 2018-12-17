@@ -1,0 +1,9 @@
+object Main extends App {
+  def printExecTime(proc: => Unit)(implicit description: String): Unit = {
+    val start = System.currentTimeMillis
+    proc
+    println(s"""${description}: ${System.currentTimeMillis - start}""")
+  }
+
+  def 
+}

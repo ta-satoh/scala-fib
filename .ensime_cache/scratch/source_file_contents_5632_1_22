@@ -1,0 +1,26 @@
+package tsatow
+
+object Main extends App {
+  def exectime(proc: => Unit): Long = {
+    val start = System.currentTimeMillis
+    proc
+    System.currentTimeMillis - start
+  }
+
+  def calculate(fib: Int => Int, description: String, maxN: Int = 4000): Unit = {
+    Range(10, maxN, 5).foreach { n =>
+      println(s"""${description}(${n}): ${exectime { fib(n) }}""")
+    }
+  }
+
+  calculate(FibRec.fib, "FibRec", 40)
+  println
+  calculate(FibTailRec.fib, "FibTailRec", 40)
+  println
+  calculate(FibRec.memoizedFib, "FibRecMemoized", 2000)
+  println
+  //calculate(FibTailRec.memoizedFib, "FibTailRecMemoized", 4000)
+  //println
+  calculate(FibIter.fi, "FibRecMemoized", 2000)
+  println
+}

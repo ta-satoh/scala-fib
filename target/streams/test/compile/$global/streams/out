@@ -1,0 +1,49 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:27:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(0)  shouldEqual 1[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:28:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(1)  shouldEqual 1[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:29:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(2)  shouldEqual 2[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:30:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(3)  shouldEqual 3[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:31:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(4)  shouldEqual 5[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:32:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(5)  shouldEqual 8[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:33:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(6)  shouldEqual 13[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:34:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(7)  shouldEqual 21[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:35:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(8)  shouldEqual 34[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:36:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(9)  shouldEqual 55[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:37:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(10) shouldEqual 89[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:38:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(11) shouldEqual 144[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:39:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(12) shouldEqual 233[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:40:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(13) shouldEqual 377[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:41:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(14) shouldEqual 610[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/test/scala/tsatow/FibTailRecSpec.scala:42:5: not found: value memoizedFib[0m
+[0m[[0m[31merror[0m] [0m[0m    memoizedFib(15) shouldEqual 987[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m16 errors found[0m

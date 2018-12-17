@@ -1,0 +1,1 @@
+scalac -classpath /Users/tsatow/works/scala-fib/target/scala-2.12/classes -bootclasspath /Users/tsatow/.sbt/boot/scala-2.12.7/lib/scala-library.jar /Users/tsatow/works/scala-fib/src/main/scala/tsatow/Main.scala
