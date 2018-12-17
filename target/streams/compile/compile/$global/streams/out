@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tsatow/works/scala-fib/src/main/scala/tsatow/Main.scala:22:24: value memoizedFib is not a member of object tsatow.FibTailRec[0m
-[0m[[0m[31merror[0m] [0m[0m  calculate(FibTailRec.memoizedFib, "FibTailRecMemoized", 4000)[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
