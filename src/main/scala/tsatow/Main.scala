@@ -7,16 +7,21 @@ object Main extends App {
     System.currentTimeMillis - start
   }
 
-  def calculate(fib: Int => Int, description: String, step: Int = 100000000, maxN: Int = 1000000000): Unit = {
+  def calculate(fib: Long => Long, description: String, step: Int = 1000, maxN: Int = 10000): Unit = {
     Range(0, maxN, step).foreach { n =>
-      println(s"""${description}(${n}): ${exectime { fib(n) }}""")
+      // warmup
+      exectime { for (_ <- 1 to 10) { fib(n) } }
+
+      val time = exectime { for (_ <- 1 to 1000) { fib(n) } }
+      println(s"""${description}(${n}): ${time}micro seconds""")
       println
     }
   }
 
-  calculate(FibRec.fib, "FibRec", 5, 50)
-  calculate(FibTailRec.fib, "FibTailRec", 5, 50)
-  calculate(FibRec.memoizedFib, "FibRecMemoized", 200, 1000)
+  calculate(FibRec.fib, "FibRec", 5, 30)
+  calculate(FibTailRec.fib, "FibTailRec", 5, 30)
+  //calculate(FibRec.memoizedFib, "FibRecMemoized", 200, 1000)
   //calculate(FibTailRec.memoizedFib, "FibTailRecMemoized", 4000)
   calculate(FibIter.fib, "FibIter")
+  calculate(FibLog.fib, "FibLog")
 }

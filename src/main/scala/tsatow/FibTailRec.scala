@@ -5,16 +5,16 @@ import scala.util.control.TailCalls._
 object FibTailRec extends Memo {
 
   @annotation.tailrec
-  def eval(stack: List[Either[Int, Int]]): List[Either[Int, Int]] = stack match {
+  def eval(stack: List[Either[Long, Long]]): List[Either[Long, Long]] = stack match {
     case Left(i1) :: Left(i2)    :: rest  => eval(Left(i1 + i2) :: rest)
     case Left(i)  :: (r@Right(_)) :: rest => r :: (Left(i) :: rest) // 呼出元で木を取り出しやすいよう入れ替え
     case _                                => stack
   }
 
-  def fib(n: Int): Int = {
+  def fib(n: Long): Long = {
     @annotation.tailrec
-    def fibTailRec(n: Int, stack: List[Either[Int,  Int]]): Int = n match {
-      case 0 | 1 => eval(Left(1) :: stack) match {
+    def fibTailRec(n: Long, stack: List[Either[Long, Long]]): Long = n match {
+      case 0 | 1 => eval(Left(1L) :: stack) match {
         case Right(n) :: rest => fibTailRec(n, rest)
         case Left(r) :: _     => r // 最後まで評価が終わっているはず
         case Nil              => 1
@@ -24,13 +24,13 @@ object FibTailRec extends Memo {
     fibTailRec(n, Nil)
   }
 
-  def memoizedFibNG(n: Int): Int = {
-    val memo = scala.collection.mutable.Map.empty[Int, Int]
+  def memoizedFibNG(n: Long): Long = {
+    val memo = scala.collection.mutable.Map.empty[Long, Long]
 
     // 単純にメモ化しても末尾再帰にできないし、
     // 相互再帰にしても末尾再帰最適化がかからない
-    def fibTailRec: (Int, List[Either[Int,  Int]]) => Int = {
-      case (0 | 1, stack) => eval(Left(1) :: stack) match {
+    def fibTailRec: (Long, List[Either[Long,  Long]]) => Long = {
+      case (0 | 1, stack) => eval(Left(1L) :: stack) match {
         case Right(n) :: rest => memoized((n, rest))
         case Left(r) :: _     => r // 最後まで評価が終わっているはず
         case Nil              => 1

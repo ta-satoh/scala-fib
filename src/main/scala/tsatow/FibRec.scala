@@ -2,8 +2,9 @@ package tsatow
 
 object FibRec extends Memo {
 
-  def fib(n: Int): Int = n match {
-    case 0 | 1 => 1
+  def fib(n: Long): Long = n match {
+    case 0 => 0
+    case 1 => 1
     case n     => fib(n - 1) + fib(n - 2)
   }
 
@@ -12,19 +13,21 @@ object FibRec extends Memo {
     val memo = scala.collection.mutable.Map.empty[Int, Int]
 
     def fib(n: Int): Int = n match {
-      case 0 | 1 => 1
+      case 0 => 0
+      case 1 => 1
       case n     => memo.getOrElseUpdate(n, fib(n - 1) + fib(n - 2))
     }
 
     fib(n)
   }
 
-  def memoizedFib(n: Int): Int = {
-    lazy val fib: Int => Int = {
-      case 0 | 1 => 1
+  def memoizedFib(n: Long): Long = {
+    lazy val memoized = memoize(fib)
+    lazy val fib: Long => Long = {
+      case 0 => 0
+      case 1 => 1
       case n     => memoized(n - 1) + memoized(n - 2)
     }
-    lazy val memoized = memoize(fib)
 
     memoized(n)
   }
