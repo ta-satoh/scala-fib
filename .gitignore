@@ -31,3 +31,8 @@ project/plugins/project/
 
 # OS dependent files
 .DS_Store
+
+# Emacs backup files
+*~
+\#*\#
+.\#*
