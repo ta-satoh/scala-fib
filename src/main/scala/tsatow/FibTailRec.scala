@@ -14,7 +14,7 @@ object FibTailRec extends Memo {
   def fib(n: Long): Long = {
     @annotation.tailrec
     def fibTailRec(n: Long, stack: List[Either[Long, Long]]): Long = n match {
-      case 0 | 1 => eval(Left(1L) :: stack) match {
+      case 0 | 1 => eval(Left(n) :: stack) match {
         case Right(n) :: rest => fibTailRec(n, rest)
         case Left(r) :: _     => r // 最後まで評価が終わっているはず
         case Nil              => 1
@@ -24,12 +24,12 @@ object FibTailRec extends Memo {
     fibTailRec(n, Nil)
   }
 
-  def memoizedFibNG(n: Long): Long = {
+  def memoizedFib(n: Long): Long = {
     val memo = scala.collection.mutable.Map.empty[Long, Long]
 
     // 単純にメモ化しても末尾再帰にできないし、
     // 相互再帰にしても末尾再帰最適化がかからない
-    def fibTailRec: (Long, List[Either[Long,  Long]]) => Long = {
+    lazy val fibTailRec: (Long, List[Either[Long,  Long]]) => Long = {
       case (0 | 1, stack) => eval(Left(1L) :: stack) match {
         case Right(n) :: rest => memoized((n, rest))
         case Left(r) :: _     => r // 最後まで評価が終わっているはず

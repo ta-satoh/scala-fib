@@ -18,8 +18,9 @@ object Main extends App {
     }
   }
 
-  calculate(FibRec.fib, "FibRec", 5, 30)
-  calculate(FibTailRec.fib, "FibTailRec", 5, 30)
+  calculate(FibRec.fib, "FibRec", 5, 40)
+  calculate(FibTailRec.fib, "FibTailRec", 5, 40)
+  calculate(FibTailRecCps.fib, "FibTailRecCps", 5, 40)
   //calculate(FibRec.memoizedFib, "FibRecMemoized", 200, 1000)
   //calculate(FibTailRec.memoizedFib, "FibTailRecMemoized", 4000)
   calculate(FibIter.fib, "FibIter")
